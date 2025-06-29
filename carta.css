@@ -22,7 +22,8 @@ main {
     display: flex;
     flex-direction: column;
     width: 20%;
-    border: solid black;
+    border: solid blue;
+    color: blue;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
@@ -36,8 +37,10 @@ main {
 
 h1 {
     background: linear-gradient(to right, violet, pink);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
+    text-shadow: black 1px 1px 1px;
+    border-radius: 30px;
+    
 }
 
 img {
@@ -104,4 +107,65 @@ input {
 
 #filha::placeholder {
     color: violet;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 768px;
+    }
+    
+    main {
+        width: 80%;
+        margin-top: 25%;
+    }
+    
+    .cores {
+        flex-direction: row;
+        width: 90%;
+        height: 8vh;
+        transform: translateY(-110%);
+    }
+    
+    .download {
+margin-left: 78%;
+margin-top: -1%;
+width: 10%;
+border-radius: 20px;
+    }
+    
+    #fonte {
+        width: 15%;
+    }
+    
+    .fechadiv {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background:white;
+    height: auto;
+    padding: 10px;
+    margin-left: 78%;
+    margin-top: 18%;
+    border: solid red;
+    }
+    
+    .fotos {
+        margin-top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .fotos img {
+        width: 60%;
+        border-radius: 30px;
+        border: solid black 3px;
+    }
 }

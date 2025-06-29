@@ -42,6 +42,7 @@ fonteCarta.style.fontSize = 20 + 'px';
 
 function baixarPDF() {
   const elemento = document.querySelector('main'); // ou qualquer outro seletor
+  const bodyimg = document.body.style.background
 
   const opt = {
     margin:       10,
@@ -53,9 +54,6 @@ function baixarPDF() {
 
   html2pdf().set(opt).from(elemento).save();
 }
-
-
-
 
 corFundo.addEventListener('input', function(){
 carta.style.background = corFundo.value
@@ -70,20 +68,21 @@ fonteCarta.style.fontSize = fonte.value + 'px';
 })
 
 function imagensJu() {
-const imagens = ['imagens/2.jpeg', 'imagens/3.jpeg', 'imagens/4.jpeg', 'imagens/5.jpeg', 'imagens/6.jpeg', 'imagens/7.jpeg', 'imagens/8.jpeg'];
+const imagens = ['imagens/1.jpg', 'imagens/2.jpeg', 'imagens/3.jpeg', 'imagens/4.jpeg', 'imagens/5.jpeg', 'imagens/6.jpeg', 'imagens/8.jpeg'];
 let index = 0;
 const banner = document.getElementById('imgs');
 
 setInterval(() => {
   index = (index + 1) % imagens.length; // volta pra 0 quando chega no fim
   banner.src = imagens[index];
-}, 4000); // 4000 milissegundos = 4 segundos
+}, 3000); // 4000 milissegundos = 4 segundos
 }
 
 const imagensTroca = imagensJu();
 
 fotos.innerHTML = `
 <div class='fotos'>
+ <h2>Você é muito Especial Para Mim Gata❤️</h2>
 <img src='${imagensTroca}' id='imgs'>
 </div>
 `
