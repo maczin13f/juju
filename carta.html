@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+    <link rel="stylesheet" href="carta.css">
+</head>
+<body background="bkju.png">
+<div class="cores">
+    <h3>Personalize</h3>
+    <span>(Cor de Fundo)<input type="color" value="#ffffff" id="background"></span>
+    <span>(Cor do Texto)<input type="color" id="letra"></span>
+    <span>Tamanho Da Letra</span><input type="number" placeholder='Ex: 16...(Esta em 20)' id="fonte">
+    </div>
+
+    <div class="download" onclick="baixarPDF()">Baixar Carta</div>
+
+
+    <div class="quiz" style="display: none;">
+        <h2><b>Precisamos Confirmar Sua Identidade</b></h2>
+        <button type="submit" id="start" onclick="mostraQuiz()">Iniciar</button>
+        <p>Qual Seria o Nome do Filho e Filha do Felipe?</p>
+        <p id="digite" style="display: none;">Digite logo Abaixo</p>
+        <div id="inputs">
+        <input type="text" id="filho" placeholder="Filho" style="display: none;">
+        <input type="text" id="filha" placeholder="Filha" style="display: none;">
+        <button type="submit" id="verify" onclick="verifica()" disabled>Verificar</button>
+        
+    </div>
+    </div>
+    <div class="fotos" style="display: none;">
+        <img src="2.jpeg" alt="">
+    </div>
+    <main>
+        <h1>Parabéns Minha Gatinha!!</h1>
+        <div class="carta">
+            <p>Que dia especial é esse ne gatinha, seu Dia, O dia que voce veio a terra, com seu brilho, seu sorriso, carinho e bondade, Despertando Alegria a todos que te conheceram, Comigo foi diferente, Despertou: Amor, Alegria, Paixão, Carinho e conseguiu com seu jeitinho, doce, alegre, delicada, atenciosa, carinhosa e divertida me Fazer o Homem Mais Feliz desse mundo inteiro, Hoje Voçê Princesa, completa 17 Anos de Vida e 1000x mais de Beleza, com seu Jeitin de Ser, essa Mulher Incrivel e Perfeita que é, eu Agradeço mto a Deus pela sua Existencia, sinceramente acho que Deus viu como eu estava triste e como eu era e disse: "hmmmm, vou fazer a Mulher Mais Perfeita desse mundo apenas pra ele exclusivamente pra ele", Aí Nasceu Voce, que por conhecidencia morava no mesmo predio que eu, e embaixo kkkk, eu nao te conhecia direito, mas quando eu te vi pela primeira vez eu ja sabia que vc seria minha kkkk e vendo toda sua beleza, paralisei te admirando, olha como estamos hoje com tantas coisas que aconteceram o Destino é so um, Eu e Voce, Voce e Eu.</p>
+         <p>Amor Aproveite esse Seu Dia Especial, Que Deus te abencoe muito mas muito mesmo, que te muitos anos de Vida (Comigo kkkk), e continue sendo essa Perfeição que Você é Gata, Logo Logo estaremos comemorando esse Dia com Nossas Familias e quem sabe nossos filhos, Eu sei que fico enchendo o seu saco mas Eu Te Amo Princesa ❤, ahhh verdade, comprei um mimozin proce, né uam coisa tipo uauuuuu seloko bixo, mas eu achei que ficaria mto bonita em você hehe, foi de Coração viu ❤, Xauuuu</p>
+        </div>
+    </main>
+
+    <div class="fotos">
+        <img src="" id="imgs">
+    </div>
+    <script src="carta.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</body>
+</html>

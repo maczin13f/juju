@@ -1,0 +1,2 @@
+<span>Digite Abaixo a Palavra Dita pelo seu Amor, quando esta com fogo ardente, Dica: tem G</span>
+<input type="text" id="inputnome">

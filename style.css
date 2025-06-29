@@ -1,0 +1,61 @@
+body {
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+h1 {
+    color: white;
+    transform: translateY(-50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dados {
+    background: url(selo.png);
+    background-size: cover;
+    background-position: center;
+    border: solid black 2px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 65vh;
+    width: 50%;
+}
+
+#botoes {
+    display: flex;
+    gap: 20px;
+    height: 12%;
+}
+
+#botoes button {
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+#abrir {
+    color: rgb(9, 255, 0);
+    text-shadow: black 1px 1px 1px;
+}
+
+#abriro {
+ background: linear-gradient(to right, rgb(9, 255, 0), greenyellow);
+ font-style: oblique;
+}
+
+#abriro:hover{
+    background: linear-gradient(to right, rgb(9, 255, 0), greenyellow);
+    font-size: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

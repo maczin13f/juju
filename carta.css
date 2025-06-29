@@ -1,0 +1,107 @@
+body {
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid black 3px;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    background: white;
+}
+
+.download {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border: solid black;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background:white;
+    height: auto;
+    padding: 10px;
+    margin-top: 23%;
+}
+
+h1 {
+    background: linear-gradient(to right, violet, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img {
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.quiz {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black 3px;
+    width: 40%;
+    padding: 10px;
+    margin: 0 auto 0 auto;
+    height: auto;
+    border-radius: 30px;
+    margin-top: 12%;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.fotos img {
+    width: 22%;
+}
+
+.cores {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border: solid black;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background:white;
+    height: auto;
+    padding: 10px;
+}
+
+#inputs {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    border: solid black;
+    border-radius: 5px;
+    height: 5vh;
+    width: 70%;
+}
+
+#filho::placeholder {
+    color: blue;
+}
+
+#filha::placeholder {
+    color: violet;
+}
