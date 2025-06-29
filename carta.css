@@ -114,6 +114,10 @@ input {
         background-size: 768px;
     }
     
+    .quiz {
+        width: 90%;
+    }
+    
     main {
         width: 80%;
         margin-top: 25%;
@@ -156,6 +160,7 @@ border-radius: 20px;
     }
     
     .fotos {
+        width: 100%;
         margin-top: 15%;
         display: flex;
         justify-content: center;

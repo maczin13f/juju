@@ -2,7 +2,8 @@ const start = document.getElementById('start');
 const input1 = document.getElementById('filho');
 const input2 = document.getElementById('filha')
 const digite = document.getElementById('digite')
-const verify = document.getElementById('verify')
+const verify = document.getElementById('verify');
+const banner = document.getElementById('imgs');
 const quiz = document.querySelector('.quiz')
 const cores = document.querySelector('.cores')
 const corFundo = document.getElementById('background');
@@ -27,6 +28,10 @@ function verifica() {
       quiz.style.display = 'none';
       cores.style.display = '';
       document.querySelector('main').style.display = '';
+      
+      document.querySelector('.fechadiv').style.display = ''
+      document.querySelector('.download').style.display = ''
+      document.querySelector('.fotos').style.display = ''
     } else {
         alert('Reposta Incorreta')
     }
@@ -70,7 +75,6 @@ fonteCarta.style.fontSize = fonte.value + 'px';
 function imagensJu() {
 const imagens = ['imagens/1.jpg', 'imagens/2.jpeg', 'imagens/3.jpeg', 'imagens/4.jpeg', 'imagens/5.jpeg', 'imagens/6.jpeg', 'imagens/8.jpeg'];
 let index = 0;
-const banner = document.getElementById('imgs');
 
 setInterval(() => {
   index = (index + 1) % imagens.length; // volta pra 0 quando chega no fim
@@ -79,12 +83,5 @@ setInterval(() => {
 }
 
 const imagensTroca = imagensJu();
-
-fotos.innerHTML = `
-<div class='fotos'>
- <h2>Você é muito Especial Para Mim Gata❤️</h2>
-<img src='${imagensTroca}' id='imgs'>
-</div>
-`
 
 fonteVazia();

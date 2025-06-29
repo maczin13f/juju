@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="carta.css">
 </head>
 <body background="bkju.png">
-<div class="cores">
+<div class="cores" style="display: none;">
      <span>Tamanho Letra</span><input type="number" placeholder='Ex: 16...(Esta em 20)' id="fonte">
      
     <span>(Cor Fundo)<input type="color" value="#ffffff" id="background"></span>
     <span>(Cor Texto)<input type="color" id="letra"></span>
     </div>
 
-    <div class="download" onclick="baixarPDF()">Baixar Carta</div>
+    <div class="download" onclick="baixarPDF()" style="display: none;">Baixar Carta</div>
     
-    <div class="fechadiv" onclick="fechaCores()">❌️
+    <div class="fechadiv" onclick="fechaCores()" style="display: none;">❌️
     
     </div>
 
 
 
-    <div class="quiz" style="display: none;">
+    <div class="quiz">
         <h2><b>Precisamos Confirmar Sua Identidade</b></h2>
         <button type="submit" id="start" onclick="mostraQuiz()">Iniciar</button>
         <p>Qual Seria o Nome do Filho e Filha do Felipe?</p>
@@ -34,11 +34,7 @@
         
     </div>
     </div>
-    <div class="fotos" style="display: none;">
-         <h1>Você é muito Especial Para Mim Gata❤️</h1>
-        <img src="" alt="">
-    </div>
-    <main>
+    <main style="display: none;">
         <h1>Parabéns Minha Gatinha!!</h1>
         <div class="carta">
             <p>Que dia especial é esse ne gatinha, seu Dia, O dia que voce veio a terra, com seu brilho, seu sorriso, carinho e bondade, Despertando Alegria a todos que te conheceram, Comigo foi diferente, Despertou: Amor, Alegria, Paixão, Carinho e conseguiu com seu jeitinho, doce, alegre, delicada, atenciosa, carinhosa e divertida me Fazer o Homem Mais Feliz desse mundo inteiro, Hoje Voçê Princesa, completa 17 Anos de Vida e 1000x mais de Beleza, com seu Jeitin de Ser, essa Mulher Incrivel e Perfeita que é, eu Agradeço mto a Deus pela sua Existencia, sinceramente acho que Deus viu como eu estava triste e como eu era e disse: "hmmmm, vou fazer a Mulher Mais Perfeita desse mundo apenas pra ele exclusivamente pra ele", Aí Nasceu Voce, que por conhecidencia morava no mesmo predio que eu, e embaixo kkkk, eu nao te conhecia direito, mas quando eu te vi pela primeira vez eu ja sabia que vc seria minha kkkk e vendo toda sua beleza, paralisei te admirando, olha como estamos hoje com tantas coisas que aconteceram o Destino é so um, Eu e Voce, Voce e Eu.</p>
@@ -46,8 +42,8 @@
         </div>
     </main>
 
-    <div class="fotos">
-        <img src="" id="imgs">
+    <div class="fotos" style="display: none;">
+        <img src="imagensJu()" id="imgs">
     </div>
     <script src="carta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
