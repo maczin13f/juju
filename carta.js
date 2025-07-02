@@ -45,6 +45,13 @@ fonteCarta.style.fontSize = 20 + 'px';
 })
 }
 
+function fechaCores() {
+   cores.style.display = 'none';
+   document.querySelector('.download').style.display = '';
+
+   
+}
+
 function baixarPDF() {
   const elemento = document.querySelector('main'); // ou qualquer outro seletor
   const bodyimg = document.body.style.background
